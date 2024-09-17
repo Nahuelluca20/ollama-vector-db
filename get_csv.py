@@ -4,7 +4,7 @@ from info_list import info
 
 embeddings = []
 for i, d in enumerate(info): 
-  response = ollama.embeddings(model="mxbai-embed-large", prompt=d)
+  response = techstack_ollama.embeddings(model="mxbai-embed-large", prompt=d)
   embedding = response["embedding"]
   embeddings.append(embedding)
 
